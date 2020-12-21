@@ -1,0 +1,79 @@
+.titolo-scheda {
+    border: 1px solid #00A6AB;
+    border-radius: 30px;
+    margin: 5px;
+
+
+    span {
+        font-size: 20px;
+        text-align:center;
+        color: $pink-airbnb;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding:15px;
+    }
+
+}
+
+.create-house {
+    .form-create {
+        display: flex;
+        justify-content: space-around;
+        .form-group{
+            label {
+                color:#00A6AB;
+                font-weight: bold;
+            }
+            h6 {
+                color:#00A6AB;
+            }
+        }
+    
+        .crea {
+            background-color: #ff5070 ;
+            border: none;
+        }
+    }
+
+
+    #delete-button {
+        background-color: transparent;
+        border: none;
+    }
+    
+    #open-sponsor-menu {
+        cursor: pointer;
+    }
+    
+    #host-sponsorship {
+        
+        form {
+            margin-left: 10px;
+            
+            select {
+                font-size: 13px;
+                padding: 3px;
+    
+                option {
+                    padding: 3px;
+                }
+            }
+        
+            input[type="submit"] {
+                font-size: 13px;
+                width: 50%;
+                margin: auto;
+                margin-top: 5px;
+                background-color: lightgrey;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .create-house {
+        .form-create {
+            display: block;
+        }
+    }
+}

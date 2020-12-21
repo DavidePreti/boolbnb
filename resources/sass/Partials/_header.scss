@@ -1,0 +1,298 @@
+@media screen and (max-width: 781px) {
+    header{
+        justify-content: center;
+        /* Logo */
+        img{
+            display: none;
+        }
+        ul{
+            display:none;
+            li{
+                display:none;
+            }
+        }
+        /* Barra di ricerca */
+        .header-search{
+            i{
+                float: right;
+            }
+        }
+    } 
+}
+@media screen and (min-width: 782px) and (max-width:992px) {
+    header{
+        justify-content: space-around;
+        /* Menu login, 'Diventa un host', hamburger */
+        .hamburger-menu{
+            width: 200px;
+            font-size: 15px;
+            right:6%;
+        }
+        li{
+            font-size: 18px;
+        }
+        li:last-child{
+            padding: 10px;
+        }
+        li:nth-last-child(2){
+            padding: 6px 10px;
+        }
+        .header-login{
+            padding:6px 10px;
+        }
+        .header-host{
+            padding:6px 10px;
+        }
+        /* Barra di ricerca centrale */
+        .header-search{
+            max-width: 500px;
+        }
+    }
+}  
+@media screen and (min-width: 993px){
+    header{
+        justify-content: space-around;
+        /* Menu login, 'Diventa un Host', hamburger */
+        .hamburger-menu{
+            width: 230px;
+            right:8%;
+        }
+        li{
+            padding: 0 15px;
+        }
+        li:last-child{
+            padding: 12px;
+        }
+        li:nth-last-child(2){
+            padding: 10px 15px;
+        }
+        .header-login{
+            padding:10px 15px;
+        }
+        .header-host:hover{
+            padding:10px 15px;
+        }
+        /* Barra di ricerca centrale */
+        .header-search{
+            max-width: 500px;
+        }
+    }
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99999;
+    background-color: #fff;
+    transition: box-shadow 1.5s;
+    /* Logo */
+    img{
+        max-width: 200px;
+        align-items: center;
+    }
+    /* Menu login, 'Diventa un Host', hamburger */
+    .hamburger-menu{
+        background-color: #f5f9fe;
+        border: 1px solid lightgrey;
+        position: absolute;
+        top:100%;
+        right: 30px;
+        display: none;
+        box-shadow: 2px 5px 5px rgb(255, 56, 92);
+        border-radius: 15px;
+        .hamburger-list{
+            display: flex;
+            flex-direction: column;
+            li{
+                color:black;
+                margin-top:25px;
+                padding:0 0;
+                border:none;
+                a{
+                    color:black;
+                    font-weight: 600;
+                    padding:10px
+                }
+
+                &.logout-link {
+                    margin-top: 15px;
+                }
+            }  
+        }
+        .hamburger-list li:hover a{
+            color:white;
+            background-color: rgb(255, 56, 92);
+            border-radius: 40px;
+            border:none;
+            box-shadow: 2px 5px 5px rgb(255, 56, 92);              
+        }
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li{
+        list-style: none;
+    }
+    li:last-child{
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        i:first-child{
+            color: black;
+        }
+        i:last-child{
+            font-size: 20px;
+            color:white;
+            background-color: #828282;
+            border-radius: 100%;
+            padding: 6px;
+            margin-left: 3px;
+        }
+    }
+    .hamburger {
+        border: none;
+    
+        #header_user_img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+    }
+
+    .hamburger:hover{
+        box-shadow: 2px 5px 5px rgb(255, 56, 92);
+        border: 0,5px solid rgb(255, 56, 92);
+    }
+    li:nth-last-child(2){
+        cursor: pointer;
+        i{
+            color:black;
+        }
+    }
+    li:nth-last-child(2):hover{
+            background-color: rgb(255, 56, 92);
+            border-radius: 25px;
+    }
+    li:nth-last-child(2):hover i{
+        color: white;
+    }
+    .header-host{
+        a{
+            color:black;
+            font-weight: 600;
+        }
+    }
+    .header-host:hover{
+        background-color:rgb(255, 56, 92);
+        border-radius: 25px;
+        color:white;
+        a{
+            color:white;
+        }
+    }
+    li:first-child{
+        a{
+        color:black;
+        font-weight: 600;
+        }
+    }
+    li:first-child:hover{
+        background-color:rgb(255, 56, 92);
+        border-radius: 25px;
+    }
+    li:first-child:hover a{
+        color: white;
+    }
+    li:first-child:hover .logout-header{
+         color:black;
+    }
+    /* Barra di ricerca centrale */
+    .header-search{
+        border-radius: 25px;
+        padding:10px;
+        cursor: pointer;
+        background-color: #f5f9fe;
+        display: flex;
+        align-items: center;
+        border: 1px solid  lightgrey;
+        input{
+            border:transparent;
+            max-width: 300px;
+            background-color: #f5f9fe;
+        }
+        i{
+            background-color:rgb(255, 56, 92);
+            border-radius: 100%;
+            padding:9px;
+            color:white;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        i:hover{
+            background-color:rgb(221, 16, 99);
+        }
+    }
+    .header-search:hover{
+        box-shadow: 2px 5px 5px rgb(255, 56, 92);
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    input:focus{
+        outline:none;
+    }
+
+    // Menu di scelta della lingua
+    .fa-globe {
+        cursor: pointer;
+    }
+
+    #header-lang {
+        position: relative;
+        top: 15px;
+        flex-direction: column;
+        margin-right: 10px;
+
+        li {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background-color: #fff;
+
+            a {
+                color: #000;
+
+                &:hover {
+                    background-color: none;
+                    color: lightblue;
+                }
+            }
+        }
+    }
+
+    li#user_name {
+        font-weight: 600;
+        background-color: transparent !important;
+        
+    }
+
+}
+header:hover{
+    box-shadow: 2px 5px 5px rgb(255, 56, 92);
+}
+.jumbotron{
+    height: 100vh;
+    background-image: url('../../../public/img/jumbotron2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:0.7;
+
+
+}
