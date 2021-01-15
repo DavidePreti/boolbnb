@@ -58,6 +58,8 @@ class HouseController extends Controller
         // Prendere i dati dal form e fare la validazione
         $data = $request->all();
 
+        dd($data);
+
         $request->validate([
             "title" => [
                 'unique:houses_info',
@@ -109,7 +111,7 @@ class HouseController extends Controller
         $newHouse->user_id = Auth::id();
         $newHouse->slug = Str::of($data["title"])->slug("-");
 
-        if(isset($data["visible"])) {
+        if (isset($data["visible"])) {
             if ($data["visible"] == 0) {
                 $newHouse->visible = false;
             } else {
@@ -283,7 +285,7 @@ class HouseController extends Controller
 
         $house->slug = Str::of($data["title"])->slug("-");
 
-        if(isset($data["visible"])) {
+        if (isset($data["visible"])) {
             if ($data["visible"] == 0) {
                 $house->visible = false;
             } else {

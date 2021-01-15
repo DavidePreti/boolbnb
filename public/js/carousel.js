@@ -139,7 +139,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\MAMP\htdocs\boolbnb-team1\resources\js\carousel.js */"./resources/js/carousel.js");
+module.exports = __webpack_require__(/*! C:\MAMP\htdocs\BoolBnB\resources\js\carousel.js */"./resources/js/carousel.js");
 
 
 /***/ })
