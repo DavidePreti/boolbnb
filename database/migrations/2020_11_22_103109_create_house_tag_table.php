@@ -14,6 +14,7 @@ class CreateHouseTagTable extends Migration
     public function up()
     {
         Schema::create('house_tag', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('house_id')->constrained('houses')->onDelete('cascade');
             $table->foreignId('tag_id')->constrained('tags')->onDelete('cascade');
         });

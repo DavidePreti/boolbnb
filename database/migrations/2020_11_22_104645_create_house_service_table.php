@@ -14,6 +14,7 @@ class CreateHouseServiceTable extends Migration
     public function up()
     {
         Schema::create('house_service', function (Blueprint $table) {
+            $table->id();
             $table->foreignId('service_id')->constrained('services')->onDelete('cascade');
             $table->foreignId('house_id')->constrained('houses')->onDelete('cascade');
         });
