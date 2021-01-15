@@ -36,10 +36,10 @@
                 <ul>
                     <li class="col-heading">Preti Davide</li>
                     <li>
-                        <a href="https://github.com/10thDocta">GitHub <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/DavidePreti" target="_blank">GitHub <i class="fab fa-github"></i></a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/davide-preti/">LinkedIn <i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/davide-preti/" target="_blank">LinkedIn <i class="fab fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>
