@@ -58,8 +58,6 @@ class HouseController extends Controller
         // Prendere i dati dal form e fare la validazione
         $data = $request->all();
 
-        dd($data);
-
         $request->validate([
             "title" => [
                 'unique:houses_info',
